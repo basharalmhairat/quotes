@@ -4,20 +4,21 @@
 package quoting;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import static quoting.Quote.QuoteView;
 
 class AppTest {
 
     @Test
     public void testFromQFile() throws Exception {
             assertEquals("Marilyn Monroe Said: I am just a small girl in a big world trying to find someone to love.",
-                    Main.quotesView("./src/main/resources/Qfile.json"));
+                   QuoteView("./src/main/resources/Qfile.json"));
         }
 
     @Test
     public void testFromQuotes() throws Exception {
         assertEquals("it,s always fail because the is change each run",
-                Main.quotesView("./src/main/resources/quotes.json"));
-        // created just to see different result each run so it,s always failer test.
+                QuoteView("./src/main/resources/quotes.json"));
+        // created just to see different result each run so it,s always failed test.
     }
 
     }
