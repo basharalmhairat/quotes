@@ -1,5 +1,4 @@
 package quoting;
-
 import static quoting.Quote.QuoteView;
 
 public class Main {
@@ -10,7 +9,6 @@ public class Main {
 
             System.out.println(Quote.readFromAPI(URLPath, FilePath));
 //            System.out.println(QuoteView("./src/main/resources/quotes.json"));
-
 
 
     }
